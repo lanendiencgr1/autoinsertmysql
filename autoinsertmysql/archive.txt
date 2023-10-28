@@ -1,0 +1,61 @@
+RL()n 大写字符n个
+rl()n 小写字符n个
+Rl()n 大小写字符n个
+r(1,99) 数字1~99 .zf(n)填充前导0到n位数
+space 空格
+bine_num 数字顺序 要传参,传从几开始  .zf(n)填充前导0到n位数
+
+#绑定循环
+client
+cno : C + bine_num.zf(3)
+cname : first_names + second_names
+csex : genders
+cage : r(1,99)
+caddress : addresses + RL()0
+cphone : phone_first + r(1,99999999).zf(8)
+csymptom : symptoms
+mno : M001
+ano : A001
+cdate : 2023 + - + r(1,12) + - + r(1,29) + space + 11:45:00
+cremark : sick_remarks
+
+client
+cno : C + r(1,99).zf(3)
+cname : first_names + second_names
+csex : genders
+cage : r(1,99)
+caddress : addresses + RL()0
+cphone : phone_first + r(1,99999999).zf(8)
+csymptom : symptoms
+mno : M001
+ano : A001
+cdate : 2023 + - + r(1,12) + - + r(1,29) + space + 11:45:00
+cremark : sick_remarks
+
+
+agency
+ano : A + r(0,99).zf(3)
+aname : first_names + second_names
+asex : genders
+aphone : phone_first + r(1,99999999).zf(8)
+aremark : 无
+
+#随机数字
+medicine
+mno : M + r(1,99).zf(3)
+mname : 药品 + RL()1
+mmode : sickmode
+mefficacy : sick_remarks
+
+#绑定数字
+medicine
+mno : M + bine_num.zf(3)
+mname : 药品 + RL()1
+mmode : sickmode
+mefficacy : sick_remarks
+
+medicine
+mno : M + bine_num.zf(3)
+mname : 药品 + RL()2
+mmode : sickmode
+mefficacy : sick_remarks

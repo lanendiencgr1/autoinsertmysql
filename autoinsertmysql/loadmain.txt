@@ -1,0 +1,12 @@
+client
+cno : C + bine_num.zf(3)
+cname : first_names + second_names
+csex : genders
+cage : r(1,99)
+caddress : addresses + RL()0
+cphone : phone_first + r(1,99999999).zf(8)
+csymptom : symptoms
+mno : M001
+ano : A001
+cdate : 2023 + - + r(1,12) + - + r(1,29) + space + 11:45:00
+cremark : sick_remarks
